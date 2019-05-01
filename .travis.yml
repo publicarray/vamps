@@ -1,0 +1,13 @@
+language: c
+install: true
+script: make
+deploy:
+  provider: releases
+  api_key:
+    secure: 06d4rsLslJolHyUltSkU0e59sJgnRnnUydbfv49ua0Tlv1gvTK76mEsT2dbNN1CKvNKWmOlfLvw9dw9kzo3FxylSv20QzctZq2E3Ss9LWJZavE0JeJL0C0b+TeyeNZR7lE/34BPCkikdgI+s0lcMxzfrJSU1wxaIeJKizPAInff6SxGcU3tH8h+SzOQM2qwx7GX7K/dMsquIvfaSj5buFWFU3Tet2dCwtoB0rcPTaoN3u4d5I2QO53JB9pAb8pRwFZ9s2XtYWCYT+/beU6Su7r+JAluVqoTsjRF8d85lnuu76b4rP1/mLlKmSQ+vtZvgXWxgi7r0JUdUqSgy9zHFaTozJ3Ge9UXGHYphwDNedIdxBYH5DBoLAlGyobEWdDIuAlg0W5svNj3pYy0l4sB4YUpIyflLbyrMtyHneFsrCAbQ4arcLXsBlWIKv0PMKRIu43dA2k8G8Z1JyCrfv33v032ggRuDrYwDX7ztMxN9ew4eEOxhFxubKwMpWtzOrAHylbHlJffsRF4iJ+ju+OrGinTMfYw6UQn++Wum+TSkw6qPUMI19WnmNvJiqc6bGPpUPOaDZfTyWJvKae9BOjw1tHQN8lJ6L9kcf4HjRBYm6rwMSHK733slbHrDCvW5ipjNZNa9JkxHtKT+7xPdzB61atwqNbO0cTSLFEZdwR+azfQ=
+  file: vamps/vamps
+  skip_cleanup: true
+  draft: true
+  on:
+    repo: publicarray/vamps
+    tags: true
