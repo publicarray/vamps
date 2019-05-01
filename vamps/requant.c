@@ -96,7 +96,7 @@ static const double max_alt_table = 0.00;
 #endif
 
 // user defined types
-//typedef unsigned int		uint;
+typedef unsigned int		uint;
 typedef unsigned char		uint8;
 typedef unsigned short		uint16;
 typedef unsigned int		uint32;
