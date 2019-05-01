@@ -1,0 +1,8 @@
+1. Ensure you have libdvdread installed. V0.9.4 is known to work Ok.
+
+2. "make"
+   This should not produce any warnings or errors. If you run into any
+   problem - try your best.
+
+3. "make install" as root will copy vamps and play_cell to /usr/local/bin.
+   Modify the Makefile for a different location.
