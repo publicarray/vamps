@@ -1,5 +1,7 @@
 language: c
-install: true
+install:
+    - apt update
+    - apt install libdvdread-dev
 script: make
 deploy:
   provider: releases
