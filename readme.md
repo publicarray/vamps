@@ -17,6 +17,17 @@ the embedded elementary video stream. The shrink factor may be either
 specified for the video ES only (-e) or for the full PS (-E).
 ```
 
+## Calculate the factor for DVD5 (4707MB)
+
+```sh
+echo $(du -BMB input.vob | cut -f 1 -d 'M')' / 4707' | bc -l
+
+## macOS
+brew install coreutils
+echo $(gdu -BMB input.vob | cut -f 1 -d 'M')' / 4707' | bc -ls
+```
+
+## Example
 ```sh
 vamps -E 1.14 -a 1 < input.vob > output.vob
 ```
