@@ -19,7 +19,6 @@ PREFIX    ?= /usr/local
 CC         = gcc
 CFLAGS    ?= -pipe -O2 -fomit-frame-pointer
 CFLAGS    += -Wall -W
-LDFLAGS   += -s
 #LDFLAGS  += -static
 LOADLIBES += -ldvdread
 

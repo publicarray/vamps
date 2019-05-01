@@ -21,7 +21,6 @@ CC         = gcc
 CFLAGS    ?= -pipe -O3 -fomit-frame-pointer -funroll-loops \
 	       -DHAVE_BUILTIN_EXPECT
 CFLAGS    += -Wall
-LDFLAGS   += -s
 #LDFLAGS  += -static
 LOADLIBES += -lm -lpthread
 

@@ -1,7 +1,6 @@
 language: c
 install:
-    - apt update
-    - apt install libdvdread-dev
+  - sudo apt-get install -y libdvdread-dev
 script: make
 deploy:
   provider: releases
